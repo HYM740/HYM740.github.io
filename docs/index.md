@@ -4,8 +4,10 @@
 
 不是很想折腾建站那些事，所以暂时就先放在这里了
 
-{% for post in site.posts %}
-
-- [{{ post.title }}]({{ post.url }})
-
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
